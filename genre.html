@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/my.css">
+  </head> 
+    <body class="bg-dark">
+	<!--navbarStart-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="./index.html">
+    <img src="https://4.bp.blogspot.com/-UUwBjN2wvjY/WDVJxdKHXGI/AAAAAAAAGpg/6S1ImIF_7lwBF7R24xs2Ww11KEK8zkpewCLcB/s1600/unnamed%2B%252820%2529.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    MOVIEWEB
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown mr-5">
+          <a class="nav-link dropdown-toggle bg-success bordered rounded" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <strong style="color:yellow;">Genres</strong>
+          </a>
+          <div class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./genre.html?id=28">Action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./genre.html?id=12">Adventure</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./genre.html?id=16">Animation</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./genre.html?id=35">Comedy</a>
+            <div class="dropdown-divider"></div>
+         <a class="dropdown-item" href="./genre.html?id=99">Documentary</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./genre.html?id=10751">Family</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./genre.html?id=36">History</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./genre.html?id=27">Horror</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./genre.html?id=9648">Mystery</a>
+            
+           
+          </div>
+        </li>
+      </ul>
+      <div class="form-inline my-2 my-lg-0" name="sf">
+        <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search" aria-label="Search">
+        <button onclick="fun()" class="btn btn-outline-success my-2 my-sm-0"  type="button">Search</button>
+      </div>
+    </div>
+  </nav>
+                  <!--navbarend-->
+                  <div class="alert alert-warning alert-dismissible fade show mt-4" role="alert">
+                    <strong>Result : </strong>Your Search Result.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>  
+
+<!---->
+<div id="carouselExampleControls" class="carousel slide" data-interval="false">
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+<!---->
+<div class="row">
+  <div class="col">
+<div class="jumbotron bg-warning bordered rounded ml-3 p-0 pt-2" style="width:18rem;">
+    <div class="row">
+      <div class="col"><img id="gimg1" class="ml-4" src="./img/images.jpg" height="220px" width="235px"></div>
+      <div class="col">
+       <table class="table table-hover table-success">
+         <thead>
+           <tr>
+             <th colspan=2 class="text-center"><a id="gimg1a" href="#" >Not found</a></th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr><td>Released On</td><td id="gimg1b"></td></tr>
+           <tr><td>Rating</td><td id="gimg1c"></td></tr>
+           <tr><td>Votes</td><td id="gimg1d"></td></tr>
+         </tbody>
+       </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="jumbotron bg-warning bordered rounded ml-3 p-0 pt-2" style="width:18rem;">
+      <div class="row">
+        <div class="col"><img id="gimg2" class="ml-4" src="./img/images.jpg" height="220px" width="235px"></div>
+        <div class="col">
+         <table class="table table-hover table-success">
+           <thead>
+             <tr>
+               <th colspan=2 class="text-center"><a id="gimg2a" href="#" >Not found</a></th>
+             </tr>
+           </thead>
+           <tbody>
+            <tr><td>Released On</td><td id="gimg2b"></td></tr>
+            <tr><td>Rating</td><td id="gimg2c"></td></tr>
+            <tr><td>Votes</td><td id="gimg2d"></td></tr>
+           </tbody>
+         </table>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="col">
+  <div class="jumbotron bg-warning bordered rounded ml-3 p-0 pt-2" style="width:18rem;">
+      <div class="row">
+        <div class="col"><img id="gimg3" class="ml-4" src="./img/images.jpg" height="220px" width="235px"></div>
+        <div class="col">
+         <table class="table table-hover table-success">
+           <thead>
+             <tr>
+               <th colspan=2 class="text-center"><a id="gimg3a" href="#" >Not found</a></th>
+             </tr>
+           </thead>
+           <tbody>
+            <tr><td>Released On</td><td id="gimg3b"></td></tr>
+            <tr><td>Rating</td><td id="gimg3c"></td></tr>
+            <tr><td>Votes</td><td id="gimg3d"></td></tr>
+           </tbody>
+         </table>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="col">
+      <div class="jumbotron bg-warning bordered rounded ml-3 p-0 pt-2" style="width:18rem;">
+          <div class="row">
+            <div class="col"><img id="gimg4" class="ml-4" src="./img/images.jpg" height="220px" width="235px"></div>
+            <div class="col">
+             <table class="table table-hover table-success">
+               <thead>
+                 <tr>
+                   <th colspan=2 class="text-center"><a id="gimg4a" href="#" >Not found</a></th>
+                 </tr>
+               </thead>
+               <tbody>
+                <tr><td>Released On</td><td id="gimg4b"></td></tr>
+           <tr><td>Rating</td><td id="gimg4c"></td></tr>
+           <tr><td>Votes</td><td id="gimg4d"></td></tr>
+               </tbody>
+             </table>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+<!---->
+</div>
+      <div class="carousel-item">
+        <!---->
+        <div class="row">
+            <div class="col">
+          <div class="jumbotron bg-warning bordered rounded ml-3 p-0 pt-2" style="width:18rem;">
+              <div class="row">
+                <div class="col"><img id="gimg5" class="ml-4" src="./img/images.jpg" height="220px" width="235px"></div>
+                <div class="col">
+                 <table class="table table-hover table-success">
+                   <thead>
+                     <tr>
+                       <th colspan=2 class="text-center"><a id="gimg5a" href="#" >Not found</a></th>
+                     </tr>
+                   </thead>
+                   <tbody>
+                    <tr><td>Released On</td><td id="gimg5b"></td></tr>
+                    <tr><td>Rating</td><td id="gimg5c"></td></tr>
+                    <tr><td>Votes</td><td id="gimg5d"></td></tr>
+                   </tbody>
+                 </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="jumbotron bg-warning bordered rounded ml-3 p-0 pt-2" style="width:18rem;">
+                <div class="row">
+                  <div class="col"><img id="gimg6" class="ml-4" src="./img/images.jpg" height="220px" width="235px"></div>
+                  <div class="col">
+                   <table class="table table-hover table-success">
+                     <thead>
+                       <tr>
+                         <th colspan=2 class="text-center"><a id="gimg6a" href="#" >Not found</a></th>
+                       </tr>
+                     </thead>
+                     <tbody>
+                      <tr><td>Released On</td><td id="gimg6b"></td></tr>
+                      <tr><td>Rating</td><td id="gimg6c"></td></tr>
+                      <tr><td>Votes</td><td id="gimg6d"></td></tr>
+                     </tbody>
+                   </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="jumbotron bg-warning bordered rounded ml-3 p-0 pt-2" style="width:18rem;">
+                <div class="row">
+                  <div class="col"><img id="gimg7" class="ml-4" src="./img/images.jpg" height="220px" width="235px"></div>
+                  <div class="col">
+                   <table class="table table-hover table-success">
+                     <thead>
+                       <tr>
+                         <th colspan=2 class="text-center"><a id="gimg7a" href="#" >Not found</a></th>
+                       </tr>
+                     </thead>
+                     <tbody>
+                      <tr><td>Released On</td><td id="gimg7b"></td></tr>
+                      <tr><td>Rating</td><td id="gimg7c"></td></tr>
+                      <tr><td>Votes</td><td id="gimg7d"></td></tr>
+                     </tbody>
+                   </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+                <div class="jumbotron bg-warning bordered rounded ml-3 p-0 pt-2" style="width:18rem;">
+                    <div class="row">
+                      <div class="col"><img id="gimg8" class="ml-4" src="./img/images.jpg" height="220px" width="235px"></div>
+                      <div class="col">
+                       <table class="table table-hover table-success">
+                         <thead>
+                           <tr>
+                             <th colspan=2 class="text-center"><a id="gimg8a" href="#" >Not found</a></th>
+                           </tr>
+                         </thead>
+                         <tbody>
+                          <tr><td>Released On</td><td id="gimg8b"></td></tr>
+                          <tr><td>Rating</td><td id="gimg8c"></td></tr>
+                          <tr><td>Votes</td><td id="gimg8d"></td></tr>
+                         </tbody>
+                       </table>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+        <!---->
+      </div>
+      <div class="carousel-item">
+        <!---->
+        <div class="row">
+            <div class="col">
+          <div class="jumbotron bg-warning bordered rounded ml-3 p-0 pt-2" style="width:18rem;">
+              <div class="row">
+                <div class="col"><img id="gimg9" class="ml-4" src="./img/images.jpg" height="220px" width="235px"></div>
+                <div class="col">
+                 <table class="table table-hover table-success">
+                   <thead>
+                     <tr>
+                       <th colspan=2 class="text-center"><a id="gimg9a" href="#" >Not found</a></th>
+                     </tr>
+                   </thead>
+                   <tbody>
+                    <tr><td>Released On</td><td id="gimg9b"></td></tr>
+                    <tr><td>Rating</td><td id="gimg9c"></td></tr>
+                    <tr><td>Votes</td><td id="gimg9d"></td></tr>
+                   </tbody>
+                 </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="jumbotron bg-warning bordered rounded ml-3 p-0 pt-2" style="width:18rem;">
+                <div class="row">
+                  <div class="col"><img id="gimg10" class="ml-4" src="./img/images.jpg" height="220px" width="235px"></div>
+                  <div class="col">
+                   <table class="table table-hover table-success">
+                     <thead>
+                       <tr>
+                         <th colspan=2 class="text-center"><a id="gimg10a" href="#" >Not found</a></th>
+                       </tr>
+                     </thead>
+                     <tbody>
+                      <tr><td>Released On</td><td id="gimg10b"></td></tr>
+                      <tr><td>Rating</td><td id="gimg10c"></td></tr>
+                      <tr><td>Votes</td><td id="gimg10d"></td></tr>
+                     </tbody>
+                   </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="jumbotron bg-warning bordered rounded ml-3 p-0 pt-2" style="width:18rem;">
+                <div class="row">
+                  <div class="col"><img id="gimg11" class="ml-4" src="./img/images.jpg" height="220px" width="235px"></div>
+                  <div class="col">
+                   <table class="table table-hover table-success">
+                     <thead>
+                       <tr>
+                         <th colspan=2 class="text-center"><a id="gimg11a" href="#" >Not found</a></th>
+                       </tr>
+                     </thead>
+                     <tbody>
+                      <tr><td>Released On</td><td id="gimg11b"></td></tr>
+                      <tr><td>Rating</td><td id="gimg11c"></td></tr>
+                      <tr><td>Votes</td><td id="gimg11d"></td></tr>
+                     </tbody>
+                   </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+                <div class="jumbotron bg-warning bordered rounded ml-3 p-0 pt-2" style="width:18rem;">
+                    <div class="row">
+                      <div class="col"><img id="gimg12" class="ml-4" src="./img/images.jpg" height="220px" width="235px"></div>
+                      <div class="col">
+                       <table class="table table-hover table-success">
+                         <thead>
+                           <tr>
+                             <th colspan=2 class="text-center"><a id="gimg12a" href="#" >Not found</a></th>
+                           </tr>
+                         </thead>
+                         <tbody>
+                          <tr><td>Released On</td><td id="gimg12b"></td></tr>
+                          <tr><td>Rating</td><td id="gimg12c"></td></tr>
+                          <tr><td>Votes</td><td id="gimg12d"></td></tr>
+                         </tbody>
+                       </table>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+        <!---->
+      </div>
+    </div>
+    
+  </div>
+
+  <nav aria-label="Page navigation example" style="margin-left:40%">
+      <ul class="pagination">
+        <li class="page-item">
+            <a class="page-link" href="#carouselExampleControls" role="button" data-slide="prev">
+              Previous
+            </a>
+
+        </li>
+
+        <li class="page-item">
+            <a class="page-link" href="#carouselExampleControls" role="button" data-slide="next">
+                Next
+            </a>
+
+        </li>
+      </ul>
+    </nav>
+<!---->
+                  <div class="navbar sticky-bottom justify-content-center navbar-light bg-light">
+                    <ul class="nav justify-content-center">
+                         <li class="nav-item">
+                           <a class="nav-link" href="#">Contact us</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="#">About us</a>
+                           </li>
+                       </ul>
+                       <ul class="nav justify-content-center">
+                         </li>
+                         <li class="nav-item justify-content-end">Developed By:<strong>Prateek Goel</strong></li>
+                       </ul>	
+                 </div>
+                 
+                     
+                 <script src="./js/jquery-3.2.1.slim.min.js"></script>
+                 <script src="./js/popper.min.js"></script>
+                 <script src="./js/genre.js"></script>
+                 <script src="./js/genresearch.js"></script>
+                 <script src="./js/genre2.js"></script>
+                 <script src="./js/bootstrap.min.js"></script> 
+                     </body>
+                 </html>

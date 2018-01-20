@@ -1,0 +1,52 @@
+.tag{
+    width:150px;
+    margin-top:167px;
+    margin-left:-20px;
+    text-align:center;
+    border-radius:8px;
+}
+.checked {
+    color: orange;
+}
+.bg{
+    background-image:url("https://image.freepik.com/free-vector/low-poly-abstract-background_1048-6723.jpg");
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgindex{
+    background-image: url("http://images.all-free-download.com/images/graphiclarge/red_geometry_abstract_background_6819703.jpg");
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media(max-width:320px){
+    .user{padding-left:0px;}
+    .image{height:700px;}
+    .parrow{margin-top:580%;margin-left:30%;}
+    .rarrow{margin-top:580%;margin-right:30%;}
+}
+#containerbyme{
+    position:relative;
+    height:29em;
+    width:99%;
+    margin:2px auto;
+    background-color: transparent;
+text-align:left;
+white-space: nowrap;
+overflow-x:auto;
+overflow-y: hidden;
+vertical-align: middle;
+-webkit-overflow-scrolling: touch;
+}    
+#in{
+    display:inline-block;
+    white-space: normal;
+    text-align:center;
+}
+@media(max-width:320px){
+.u{overflow: hidden;}
+}
+
