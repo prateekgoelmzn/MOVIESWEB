@@ -86,11 +86,11 @@ document.getElementById("r7").href='./movieInfo.html?id='+myObj.results[6].id;
         document.getElementById("r10c").innerHTML=myObj.results[9].popularity;
         var img10="https://image.tmdb.org/t/p/w500"+myObj.results[9].poster_path;
         document.getElementById("rimg10").src=img10;
-        document.getElementById("c1").src="https://image.tmdb.org/t/p/w650"+myObj.results[0].backdrop_path;
-        document.getElementById("c2").src="https://image.tmdb.org/t/p/w650"+myObj.results[1].backdrop_path;
-        document.getElementById("c3").src="https://image.tmdb.org/t/p/w650"+myObj.results[2].backdrop_path;
-        document.getElementById("c4").src="https://image.tmdb.org/t/p/w650"+myObj.results[3].backdrop_path;
-        document.getElementById("c5").src="https://image.tmdb.org/t/p/w650"+myObj.results[4].backdrop_path;
+        document.getElementById("c1").src="https://image.tmdb.org/t/p/w500"+myObj.results[0].backdrop_path;
+        document.getElementById("c2").src="https://image.tmdb.org/t/p/w500"+myObj.results[1].backdrop_path;
+        document.getElementById("c3").src="https://image.tmdb.org/t/p/w500"+myObj.results[2].backdrop_path;
+        document.getElementById("c4").src="https://image.tmdb.org/t/p/w500"+myObj.results[3].backdrop_path;
+        document.getElementById("c5").src="https://image.tmdb.org/t/p/w500"+myObj.results[4].backdrop_path;
     }
 };
 url="https://api.themoviedb.org/3/movie/popular?api_key=5c8c2f862eecc57cc9a208ccde813b0b&language=en-US&page=1";
